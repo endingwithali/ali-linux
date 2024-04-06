@@ -1,7 +1,7 @@
 #/* Live Image (UEFI boot) */
 title-text: ""
-desktop-image: "../splash.png"
-desktop-color: "#041838"
+desktop-image: "./uwu.jpeg"
+desktop-color: "yellow"
 terminal-left: "0"
 terminal-top: "0"
 terminal-width: "100%"
@@ -16,29 +16,29 @@ terminal-border: "0"
 #ifdef MENU1
 #  + hbox {
 #    left = 0
-#    + label {text = " >" font = "Sans 10" color = "white" align = "left"}
-#    + label {text = MENU1 font = "Sans 10" color = "#c0c0c0" align = "left"}
+#    + label {text = " >" font = "Sans 10" color = "red" align = "left"}
+#    + label {text = MENU1 font = "Sans 10" color = "black" align = "left"}
 #  }
 #endif
 #ifdef MENU2
 #  + hbox {
 #    left = 0
-#    + label {text = "   >" font = "Sans 10" color = "white" align = "left"}
-#    + label {text = MENU2 font = "Sans 10" color = "#c0c0c0" align = "left"}
+#    + label {text = "   >" font = "Sans 10" color = "red" align = "left"}
+#    + label {text = MENU2 font = "Sans 10" color = "black" align = "left"}
 #  }
 #endif
 #ifdef MENU3
 #  + hbox {
 #    left = 0
-#    + label {text = "     >" font = "Sans 10" color = "white" align = "left"}
-#    + label {text = MENU3 font = "Sans 10" color = "#c0c0c0" align = "left"}
+#    + label {text = "     >" font = "Sans 10" color = "red" align = "left"}
+#    + label {text = MENU3 font = "Sans 10" color = "black" align = "left"}
 #  }
 #endif
 #ifdef MENU4
 #  + hbox {
 #    left = 0
-#    + label {text = "       >" font = "Sans 10" color = "white" align = "left"}
-#    + label {text = MENU4 font = "Sans 10" color = "#c0c0c0" align = "left"}
+#    + label {text = "       >" font = "Sans 10" color = "red" align = "left"}
+#    + label {text = MENU4 font = "Sans 10" color = "black" align = "left"}
 #  }
 #endif
 #}
@@ -49,9 +49,9 @@ terminal-border: "0"
   width = 100%
   height = 35
   align = "center"
-  color = "#ffffff"
+  color = "red"
   font = "Sans 16"
-  text = "Kali Linux live menu (UEFI mode)"
+  text = "ALI Linux live menu (UEFI mode)"
 }
 
 + boot_menu {
@@ -59,8 +59,8 @@ terminal-border: "0"
   width = 73%
   top = 39%
   height = 42%
-  item_color = "#f3f3f3"
-  selected_item_color = "#ffffff"
+  item_color = "black"
+  selected_item_color = "red"
   item_height = 36
   item_padding = 0
   item_spacing = 4

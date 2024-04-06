@@ -61,11 +61,11 @@ configure_usergroups() {
     # kaboxer - for kaboxer
     # vboxsf - shared folders for virtualbox guest
     # wireshark - capture sessions in wireshark
-    kali_groups="adm dialout kaboxer vboxsf wireshark"
+    ali_groups="adm dialout kaboxer vboxsf wireshark"
 
     for user in $(get_user_list | grep -xv root); do
-	echo "INFO: adding user '$user' to groups '$kali_groups'"
-	for grp in $kali_groups; do
+	echo "INFO: adding user '$user' to groups '$ali_groups'"
+	for grp in $ali_groups; do
 	    getent group $grp >/dev/null || continue
 	    usermod -a -G $grp $user
 	done

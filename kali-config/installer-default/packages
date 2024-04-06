@@ -21,3 +21,6 @@ kali-linux-default
 kali-desktop-xfce
 kali-desktop-gnome
 kali-desktop-kde
+
+neofetch 
+alsa-utils

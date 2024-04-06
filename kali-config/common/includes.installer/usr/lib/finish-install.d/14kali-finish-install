@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Run the kali-finish-install script to configure the target system
-cp /kali-finish-install /target/
-in-target /kali-finish-install || true
-rm -f /target/kali-finish-install
+# Run the ali-finish-install script to configure the target system
+cp /ali-finish-install /target/
+in-target /ali-finish-install || true
+rm -f /target/ali-finish-install

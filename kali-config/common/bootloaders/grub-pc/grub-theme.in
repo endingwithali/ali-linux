@@ -1,7 +1,7 @@
 #/* Installer Image (UEFI boot) */
-title-text: ""
-desktop-image: "../splash.png"
-desktop-color: "#041838"
+title-text: "WELCOME TO ALI LINUX"
+desktop-image: "../alifaces/uwu.jpeg"
+desktop-color: "#FFFF8F"
 terminal-left: "0"
 terminal-top: "0"
 terminal-width: "100%"
@@ -51,7 +51,7 @@ terminal-border: "0"
   align = "center"
   color = "#ffffff"
   font = "Sans 16"
-  text = "Kali Linux installer menu (UEFI mode)"
+  text = "ALI  Linux installer menu (UEFI mode)"
 }
 
 + boot_menu {

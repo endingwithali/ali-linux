@@ -9,7 +9,7 @@ configure_zsh() {
     if echo "${LIVE_CONFIG_CMDLINE}" | grep -qs 'nozsh'; then
 	return
     fi
-    chsh --shell /usr/bin/zsh kali
+    chsh --shell /usr/bin/zsh ali
     chsh --shell /usr/bin/zsh root
 }
 
@@ -23,27 +23,27 @@ configure_usergroups() {
     # kaboxer - for kaboxer
     # vboxsf - shared folders for virtualbox guest
     # wireshark - capture sessions without being root
-    kali_groups="adm dialout kaboxer vboxsf wireshark"
+    ali_groups="adm dialout kaboxer vboxsf wireshark"
 
-    for grp in $kali_groups; do
+    for grp in $ali_groups; do
 	getent group $grp >/dev/null || continue
-	usermod -a -G $grp kali
+	usermod -a -G $grp ali
     done
 }
 
 # Avoid configuring multiple times in case persistence is enabled
-if [ -e /var/lib/live/config/kali-user-setup ]; then
+if [ -e /var/lib/live/config/ali-user-setup ]; then
     exit 0
-fi
+    
 
-# Set "kali" as password for the user kali
-usermod -p 'AqLUsDitNnTsw' kali
+# Set "ali" as password for the use ali
+usermod -p '69OiNvXbDFqy2' ali
 
 # Change default shell to zsh
 configure_zsh
 
-# Add kali user to additional groups
+# Add ali user to additional groups
 configure_usergroups
 
 # Remember that this script has been run
-touch /var/lib/live/config/kali-user-setup
+touch /var/lib/live/config/ali-user-setup
